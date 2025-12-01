@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+.description {
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 0 8%;
+}
+
+.left {
+    width: 45%;
+    
+}
+.left h1 {
+    margin-top: 20px;
+    margin-left: -500px;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: right;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+.left h2 {
+    color: rgba(240, 248, 255, 0.678);
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.left p {
+    color: #999;
+    margin-top: 40px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    text-indent: 30px;
+}
+.right {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: -1200px;
+    animation-name: bas;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+}
+.right img {
+    height: 500px;
+    border: transparent;
+    border-radius: 50%;
+}
+
+.icon {
+    display: flex;
+    margin-left: -25px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.icon a {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 50px;
+    text-decoration: none;
+}
+.icon a i {
+    margin: 15px 0;
+    color: rgba(255, 255, 255, 0.514);
+    font-size: 20px;
+    border: 2px solid #eff;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-timing-function: 0.5s;
+}
+
+.icon a i:hover {
+    background-color: rgba(231, 231, 231, 0.199);
+    transition: 0.5s;
+}
+
+
+@keyframes bas {
+    from { transform: translateY(0);}
+    to { transform: translateY(620px);}
+}
+
+@keyframes right {
+    from { transform: translateX(0);}
+    to { transform: translateX(513px);}
+}

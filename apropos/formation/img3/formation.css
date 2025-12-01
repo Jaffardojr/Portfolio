@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-color: rgba(20, 58, 116, 0.733);
+ }
+ .description {
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    padding-top: 5rem;
+
+ }
+ .description h1 {
+    color: rgba(0, 0, 0, 0.788);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+ }
+ .description p {
+    color: rgba(8, 8, 8, 0.575);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    margin-left: 30px;
+ }
+ 
+ .bothe {
+    display: flex;
+    margin-right: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 500px;
+ }
+ .bothe .left {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(150, 9, 9, 0.548);
+    width: 25%;
+    height: 55%;
+    margin-top: 50px;
+    margin-left: 4rem;
+    
+ }
+ .bothe .left h2 {
+    
+    font-size: 2em;
+    color: rgba(245, 245, 245, 0.651);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow:  0 0 10px rgba(3, 3, 3, 0.322);
+    text-align: center;
+ }
+
+ .bothe .right {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(150, 9, 9, 0.548);
+    width: 25%;
+    height: 55%;
+    margin-top: 50px;
+    margin-left: 4rem;
+ }
+ .bothe .right h2 {
+    font-size: 2em;
+    color: rgba(245, 245, 245, 0.651);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow:  0 0 10px rgba(3, 3, 3, 0.322);
+    text-align: center;
+ }

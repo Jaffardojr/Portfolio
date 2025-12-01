@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    background-image: url(images/cc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-attachment: fixed;
+ }
+
+header {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+header .logo {
+    margin-right: 15em;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+}
+header .logo span {
+    color: rgba(170, 21, 10, 0.562);
+    font-size: 25px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    animation-name: bas;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+header .menu ul {
+    display: flex;
+    margin-top: 0;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+header .menu ul li {
+    list-style-type: none;
+    margin: 0 3rem;
+}
+header .menu ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+header .menu ul li a:hover {
+    color: rgba(19, 20, 26, 0.384);
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+/*section home*/
+
+#home {
+    padding-top: 4rem;
+    margin: 5px;
+    justify-content: center;
+   
+}
+
+.acceil {
+    text-align: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8rem;
+}
+.acceil h1 {
+    color: rgba(0, 0, 0, 0.637);
+}
+.acceil::first-letter {
+    color: rgba(255, 0, 0, 0.575);
+    font-family: cursive;
+    font-size: 5rem;
+}
+/* section apr*/
+.apr h2 {
+    color: rgba(226, 7, 7, 0.849);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 3rem;
+}
+.apr {
+    padding: 5px;
+}
+
+@keyframes bas {
+    from { transform: translateY(0);}
+    to { transform: translateY(10px);}
+}
